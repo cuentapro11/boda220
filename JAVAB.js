@@ -410,8 +410,8 @@ function showToast(title, message) {
       const offset = window.scrollY * 0.5; // velocidad del efecto
       hero.style.backgroundPosition = `center ${offset}px`;
     } else {
-      // Reset en desktop (usa fixed normal)
-      hero.style.backgroundPosition = "center 0";
+      // Desktop: mantener fondo fijo y bajar un poco la imagen
+      hero.style.backgroundPosition = "center 25%";
     }
   }
 
