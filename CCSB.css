@@ -182,7 +182,7 @@ html { background-color: #8B5E3C; }
     margin: 0 auto;    /* centrar como el resto */
     min-height: 100vh;
     background: url('https://i.ibb.co/4wBH7S3R/0ea4ea193a4f-dosmasenlamesa-2-z.jpg') center center no-repeat;
-    background-size: 120% auto; /* menos zoom */
+    background-size: 80% auto; /* ajuste solicitado */
     background-attachment: fixed;
     will-change: background-position;
     display: flex;
@@ -195,6 +195,13 @@ html { background-color: #8B5E3C; }
     .hero-section {
         background-color: #111; /* fallback paint */
         min-height: 100dvh; /* llenar pantalla en móvil */
+        /* full-bleed y sin bordes laterales en móvil */
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+        background-size: cover !important; /* que no se vean bordes */
+        background-position: center center !important;
     }
 }
 
