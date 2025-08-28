@@ -411,7 +411,7 @@ function showToast(title, message) {
       hero.style.backgroundPosition = `center ${offset}px`;
     } else {
       // Desktop: mantener fondo fijo y bajar un poco la imagen
-      hero.style.backgroundPosition = "center 15%";
+      hero.style.backgroundPosition = "center 25%";
     }
   }
 
